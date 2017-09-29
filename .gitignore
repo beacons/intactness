@@ -1,9 +1,10 @@
+case_study/
 data/
 docs/
 grass/
 notes/
 python/
-supp_info/
+supp_info_rmd/
 R/
 *.log
 *.otl
