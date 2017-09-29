@@ -1,4 +1,4 @@
-####Table S2. Examples of recent remote sensing based disturbance datasets from Canada
+#### Table S2. Examples of recent remote sensing based disturbance datasets from Canada
 
 Several disturbance datasets have been developed recently, some of which have been used to update both the Canada and Global IFL datasets. The datasets represent changes in forest cover with or without attribution to disturbance type.
 
