@@ -3,6 +3,7 @@ docs/
 grass/
 notes/
 python/
+supp_info/
 R/
 *.log
 *.otl
