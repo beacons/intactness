@@ -1,10 +1,3 @@
----
-output:
-  html_document
----
-
-&nbsp;
-
 ####Table S1. Description and coverage of intactness maps from Canada and Alaska
 
 Intactness datasets can help conservation planners to design and evaluate protected areas. This page describes existing global and regional datasets that measure intactness directly or indirectly i.e., human footprint maps. The geographic focus is on the boreal region of North America.
@@ -166,5 +159,3 @@ UNEP. 2001. Nelleman, C., Kullerud, L., Vistnes, I., Forbes, B.C., Husby, E., Ko
 Venter, O. et al. 2016a Global terrestrial Human Footprint maps for 1993 and 2009. Sci. Data 3, 160067.
 
 Venter, O. et al. 2016b. Sixteen years of change in the global terrestrial human footprint and implications for biodiversity conservation. Nat. Commun. 7, 12558
-
-<br>

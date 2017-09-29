@@ -1,10 +1,3 @@
----
-output:
-  html_document
----
-
-&nbsp;
-
 ####Table S2. Examples of recent remote sensing based disturbance datasets from Canada
 
 Several disturbance datasets have been developed recently, some of which have been used to update both the Canada and Global IFL datasets. The datasets represent changes in forest cover with or without attribution to disturbance type.
@@ -44,5 +37,3 @@ Hermosilla, T., Wulder, M.A., White, J.C., Coops, N.C., Hobart, G.W. & Campbell,
 Pasher, J., E. Seed, and J. Duffe. 2013. Development of boreal ecosystem anthropogenic disturbance layers for Canada based on 2008 to 2010 Landsat imagery. Can. J. Remote Sensing 39 (1): 42-58.
 
 White, J.C., Wulder, M.A., Hermosilla, T., Coops, N.C. and Hobart, G.W. 2017 A nationwide annual characterization of 25 years of forest disturbance and recovery for Canada using Landsat time series. Remote Sensing of Environment, 194, 303-321.
-
-<br>
