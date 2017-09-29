@@ -92,9 +92,11 @@ Intactness datasets can help conservation planners to design and evaluate protec
 
 **Alaska Landscape Intactness (Trammell and Aisu 2016).** The landscape condition model (LCM) was developed to measure the impact of the human footprint on a landscape. The LCM weighs the relative influence of different types of human activities to arrive at five condition classes ranging for very low (0.0-0.2) to very high (0.8-1.0) impact. The "very low" class combined with the Alaska IFL was then used to derive a landscape intactness dataset.
 
+<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/lcm1.png"><img width=200 src="maps/lcm1.png"></a>
+
   - Website: http://accs.uaa.alaska.edu/?s=Landscape+Integrity
   - View report: http://accs.uaa.alaska.edu/files/rapid-ecoregional-assessments/cyr/CentralYukonREA_SectionF_LandscapeIntegrity.pdf
-    <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/lcm1.png"><img width=200 src="maps/lcm1.png"></a>
+    
 
 
 **Alaska Intact Forest Landscapes (Strittholt et al. 2006).** The Intact Forest Landscapes (IFL) map depicts Alaska's remaining forest landscape fragments using three classes: 5,000-10,000 hectares, 10,000-50,000 hectares, and &gt;50,000 ha. The map was produced using (i) existing datasets describing major anthropogenic changes/disturbances (e.g., roads, other linear features, reservoirs) to exclude large areas influenced by human activities and (ii) satellite imagery (Landsat 5 and 7, 30m) to identify finer scale anthropogenic disturbances (e.g., cutblocks, cutlines) within candidate intact forest landscapes. Note that, similar to the Canada IFL dataset, fires were treated as natural disturbances.
