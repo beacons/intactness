@@ -1,0 +1,65 @@
+---
+output:
+  html_document
+---
+
+&nbsp;
+
+#### Case Study 1 - Seismic lines in Alberta
+
+```{r echo=FALSE, message=F, warning=F}
+library(raster)
+library(leaflet)
+library(knitr)
+
+region = "ab_footprint"
+
+
+bnd = shapefile(paste0("../data/",region,"/vector/bnd.shp"))
+bnd <- spTransform(bnd, CRS("+proj=longlat +datum=WGS84"))
+cifl2013 = shapefile(paste0("../data/",region,"/vector/cifl2013.shp"))
+cifl2013 <- spTransform(cifl2013, CRS("+proj=longlat +datum=WGS84"))
+gifl2013 = shapefile(paste0("../data/",region,"/vector/gifl2013.shp"))
+gifl2013 <- spTransform(gifl2013, CRS("+proj=longlat +datum=WGS84"))
+hf2009 = shapefile(paste0("../data/",region,"/vector/hf2009.shp"))
+hf2009 <- spTransform(hf2009, CRS("+proj=longlat +datum=WGS84"))
+ff = shapefile(paste0("../data/",region,"/vector/ff.shp"))
+ff <- spTransform(ff, CRS("+proj=longlat +datum=WGS84"))
+unused = shapefile(paste0("../data/",region,"/vector/un100.shp"))
+unused <- spTransform(unused, CRS("+proj=longlat +datum=WGS84"))
+wild = shapefile(paste0("../data/",region,"/vector/wild.shp"))
+wild <- spTransform(wild, CRS("+proj=longlat +datum=WGS84"))
+msa = shapefile(paste0("../data/",region,"/vector/msa90.shp"))
+msa <- spTransform(msa, CRS("+proj=longlat +datum=WGS84"))
+abmi2012 <- shapefile(paste0("../data/",region,"/vector/abmi2012.shp"))
+abmi2012 <- spTransform(abmi2012, CRS("+proj=longlat +datum=WGS84"))
+seismic2012 <- abmi2012[abmi2012$PublicCode=="Seismic line",]
+abmi2007 <- shapefile(paste0("../data/",region,"/vector/abmi2007.shp"))
+abmi2007 <- spTransform(abmi2007, CRS("+proj=longlat +datum=WGS84"))
+seismic2007 <- abmi2007[abmi2007$FEATURE_TY=="CUTLINE-TRAIL",]
+
+m <- leaflet(bnd, width=900, height=600) %>%
+	addProviderTiles("Esri.NatGeoWorldMap", group="Esri.NatGeoWorldMap") %>%
+	addProviderTiles("Esri.WorldImagery", group="Esri.WorldImagery") %>%
+	addPolygons(data=bnd, fill=F, weight=2, color="black", fillOpacity=1, group="Ecoregion") %>%
+	addPolygons(data=seismic2012, fill=F, weight=2, color="black", fillOpacity=1, group="Seismic2012") %>%
+	addPolygons(data=seismic2007, fill=F, weight=2, color="blue", fillOpacity=1, group="Seismic2007") %>%
+	addPolygons(data=cifl2013, fill=T, weight=2, color="darkred", fillOpacity=0.5, group="CIFL2013") %>%
+	addPolygons(data=gifl2013, fill=T, weight=2, color="darkgreen", fillOpacity=0.5, group="GIFL2013") %>%
+	addPolygons(data=hf2009, fill=T, weight=2, color="darkblue", fillOpacity=0.5, group="HF2009") %>%
+	addPolygons(data=ff, fill=T, weight=2, color="grey", fillOpacity=0.5, group="FF") %>%
+	addPolygons(data=unused, fill=T, weight=2, color="red", fillOpacity=0.5, group="UNUSED") %>%
+	addPolygons(data=wild, fill=T, weight=2, color="blue", fillOpacity=0.5, group="WILD") %>%
+	addPolygons(data=msa, fill=T, weight=2, color="green", fillOpacity=0.5, group="MSA") %>%
+	addLayersControl(position = "topright",
+		baseGroups=c("Esri.NatGeoWorldMap", "Esri.WorldImagery"),
+		overlayGroups = c("Ecoregion","Seismic2012","Seismic2007","CIFL2013","GIFL2013","HF2009","FF","UNUSED","WILD","MSA"),
+		options = layersControlOptions(collapsed = FALSE)) %>%
+		hideGroup(c("Seismic2012","Seismic2007","CIFL2013","GIFL2013","HF2009","FF","UNUSED","WILD","MSA"))
+
+m
+x <- read.csv(paste0("../data/",region,"/seismic_accuracy.csv"), as.is=T)
+x$map <- toupper(x$map)
+names(x) <- c("Intactness Map","Study area (km2)","Intact area (km2)","Intact area (%)","Seismic area (km2)","Area omitted (km2)","Area omitted (%)")
+kable(x, align=c('l','c','c','c','c','c','c'),caption='**Table 1**. Area omitted by each intactness map in the Alberta study area.')
+```

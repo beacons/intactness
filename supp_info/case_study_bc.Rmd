@@ -1,0 +1,66 @@
+---
+output:
+  html_document
+---
+
+&nbsp;
+
+#### Case Study 2b - Harvesting in British Columbia
+
+```{r echo=FALSE, message=F, warning=F}
+library(raster)
+library(leaflet)
+library(knitr)
+
+region = "bc_harvest"
+disturb = "harvest"
+
+bnd = shapefile(paste0("../data/",region,"/vector/bnd.shp"))
+bnd <- spTransform(bnd, CRS("+proj=longlat +datum=WGS84"))
+cifl2013 = shapefile(paste0("../data/",region,"/vector/cifl2013.shp"))
+cifl2013 <- spTransform(cifl2013, CRS("+proj=longlat +datum=WGS84"))
+gifl2013 = shapefile(paste0("../data/",region,"/vector/gifl2013.shp"))
+gifl2013 <- spTransform(gifl2013, CRS("+proj=longlat +datum=WGS84"))
+hf2009 = shapefile(paste0("../data/",region,"/vector/hf2009.shp"))
+hf2009 <- spTransform(hf2009, CRS("+proj=longlat +datum=WGS84"))
+ff = shapefile(paste0("../data/",region,"/vector/ff.shp"))
+ff <- spTransform(ff, CRS("+proj=longlat +datum=WGS84"))
+unused = shapefile(paste0("../data/",region,"/vector/un100.shp"))
+unused <- spTransform(unused, CRS("+proj=longlat +datum=WGS84"))
+wild = shapefile(paste0("../data/",region,"/vector/wild.shp"))
+wild <- spTransform(wild, CRS("+proj=longlat +datum=WGS84"))
+msa = shapefile(paste0("../data/",region,"/vector/msa90.shp"))
+msa <- spTransform(msa, CRS("+proj=longlat +datum=WGS84"))
+harvest <- shapefile(paste0("../data/",region,"/vector/harvest.shp"))
+harvest <- spTransform(harvest, CRS("+proj=longlat +datum=WGS84"))
+
+harvest$year <- as.integer(harvest$GRIDCODE) + 1900
+pal <- colorNumeric(palette = "RdYlGn", domain = harvest$year, reverse=TRUE)
+
+m <- leaflet(bnd, width=900, height=600) %>%
+	addProviderTiles("Esri.NatGeoWorldMap", group="Esri.NatGeoWorldMap") %>%
+	addProviderTiles("Esri.WorldImagery", group="Esri.WorldImagery") %>%
+	addPolygons(data=bnd, fill=F, weight=2, color="black", fillOpacity=1, group="Ecoregion") %>%
+	addPolygons(data=harvest, fill=T, weight=2, color=~pal(year), smoothFactor=0.2, fillOpacity=1, group="Harvest") %>%
+	addLegend("bottomright", pal = pal, values = ~harvest$year, title = "Harvest Year", labFormat=labelFormat(big.mark=''), opacity = 1) %>%
+	addPolygons(data=cifl2013, fill=T, weight=2, color="darkred", fillOpacity=0.5, group="CIFL2013") %>%
+	addPolygons(data=gifl2013, fill=T, weight=2, color="darkgreen", fillOpacity=0.5, group="GIFL2013") %>%
+	addPolygons(data=hf2009, fill=T, weight=2, color="darkblue", fillOpacity=0.5, group="HF2009") %>%
+	addPolygons(data=ff, fill=T, weight=2, color="grey", fillOpacity=0.5, group="FF") %>%
+	addPolygons(data=unused, fill=T, weight=2, color="red", fillOpacity=0.5, group="UNUSED") %>%
+	addPolygons(data=wild, fill=T, weight=2, color="blue", fillOpacity=0.5, group="WILD") %>%
+	addPolygons(data=msa, fill=T, weight=2, color="green", fillOpacity=0.5, group="MSA") %>%
+	#addRasterImage(rharvest, col=pc1_cols, opacity=0.8, group="Temp indicator") %>%
+	#addLegend(pal=pc1_cols, values=values(rharvest), bins=5, position=c("bottomright"), title="Temp indicator", opacity=0.8) %>%
+	addLayersControl(position = "topright",
+		baseGroups=c("Esri.NatGeoWorldMap", "Esri.WorldImagery"),
+		overlayGroups = c("Ecoregion","Harvest","CIFL2013","GIFL2013","HF2009","FF","UNUSED","WILD","MSA"),
+		options = layersControlOptions(collapsed = FALSE)) %>%
+		hideGroup(c("Harvest","CIFL2013","GIFL2013","HF2009","FF","UNUSED","WILD","MSA"))
+
+m
+x <- read.csv(paste0("../data/",region,"/harvest_accuracy.csv"), as.is=T)
+x$map <- toupper(x$map)
+names(x) <- c("Intactness Map","Study area (km2)","Intact area (km2)","Intact area (%)","Harvest area (km2)","Area omitted (km2)","Area omitted (%)")
+kable(x, align=c('l','c','c','c','c','c','c'),caption='**Table 1**. Area omitted by each intactness map in the British Columbia study area.')
+```

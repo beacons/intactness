@@ -1,0 +1,9 @@
+data/
+docs/
+grass/
+notes/
+python/
+R/
+*.log
+*.otl
+Rgui.lnk
