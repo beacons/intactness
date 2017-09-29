@@ -33,36 +33,39 @@ Intactness datasets can help conservation planners to design and evaluate protec
   - Website: http://www.wri.org/publication/last-frontier-forests (16-Mar-2017: link no longer works)
   - Distribution in Canada and Alaska:
 
-<center>
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/ff.png"><img width=200 src="maps/ff.png"></a><br>Frontier Forests 1997
-</center>
+| Frontier Forests |
+|:----------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/ff.png"><img width=200 src="maps/ff.png"></a> |
+
 
 **HANPP (Haberl et al. 2007).** Human appropriation of net primary productivity (HANPP) represents the aggregate impact of land use on biomass available each year in ecosystems and is considered to be a prominent measure of human domination of the biosphere. HANPP is based on vegetation modeling, agricultural and forestry statistics, and geographical information systems data on land use, land cover, and soil degradation that localizes human impact on ecosystems. Global HANPP maps are available as PDF files while several underlying land use datasets are available in digital raster format including a map of wilderness and unproductive areas produced by the same authors (Erb et al 2007) which may be of most interest for selecting benchmarks. Other approaches have been used to calculate HANPP (e.g., Imhoff et al 2004) and these are reviewed in the main website.
 
   - Download data (Wilderness and unproductive areas): <http://www.uni-klu.ac.at/socec/inhalt/1189.htm>
   - Distribution in Canada and Alaska:
 
-<center>
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/unused.png"><img width=200 src="maps/unused.png"></a><br>HANPP Unused 2000
-</center>
+| HANNP Unused |
+|:------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/unused.png"><img width=200 src="maps/unused.png"></a> |
+
 
 **Anthromes (Ellis and Ramankutty 2008).** From The Encyclopedia of Earth: "Anthropogenic biomes describe globally-significant ecological patterns within the terrestrial biosphere caused by sustained direct human interaction with ecosystems, including agriculture, urbanization, forestry and other land uses. Conventional biomes, such as tropical rainforests or grasslands, are based on global vegetation patterns related to climate. Now that humans have fundamentally altered global patterns of ecosystem form, process, and biodiversity, anthropogenic biomes provide a contemporary view of the terrestrial biosphere in its human-altered form. Anthropogenic biomes may also be termed "anthromes" to distinguish them from conventional biome systems, or "human biomes" (a simpler but less precise term)". The three wildland categories (wild forest, sparse trees, and barren) are of primary interest.
 
   - Website: http://www.ecotope.org/anthromes/default.aspx
   - Distribution in Canada and Alaska:
 
-<center>
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/wild.png"><img width=200 src="maps/wild.png"></a><br>Anthromes Wild 2000
-</center>
+| Anthromes Wild |
+|:--------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/wild.png"><img width=200 src="maps/wild.png"></a> |
+
 
 **GLOBIO (UNEP 2001).** GLOBIO is a modelling framework that can be used to calculate the combined effects of five broad environmental drivers on indicators of biodiversity in the past, present and future. The framework combines several established models used to assess the cumulative effects of human pressures on biodiversity worldwide. The GLOBIO models are based on scientific literature reviews to develop dose-response relationships between biodiversity indicators and various human pressures. The main biodiversity indicator map produced by GLOBIO is the Mean Species Abundance (MSA) and Ecosystem extent. MSA is an indicator of naturalness or biodiversity intactness. It is defined as the mean abundance of original species relative to their abundance in undisturbed ecosystems. An area with an MSA of 100% means a biodiversity that is similar to the natural situation. An MSA of 0% means a completely destructed ecosystem, with no original species remaining. The most recent version of the model, GLOBIO 3.0, evaluates the impacts of infrastructure development (e.g., roads, pipelines, powerlines, settlements), land use change and land use intensity, climate change and nitrogen deposition on biodiversity.
 
   - Website: http://www.globio.info
   - Distribution in Canada and Alaska:
 
-<center>
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/msa.png"><img width=200 src="maps/msa.png"></a><br>GLOBIO MSA90 2001 (?)
-</center>
+| GLOBIO MSA |
+|:----------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/msa.png"><img width=200 src="maps/msa.png"></a> |
 
 ---
 
@@ -73,10 +76,9 @@ Intactness datasets can help conservation planners to design and evaluate protec
   - Download data: http://globalforestwatch.ca/node/252
   - Distribution in Canada and Alaska:
 
-<center>
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/cifl2013.png"><img width=200 src="maps/cifl2013.png"></a>&nbsp;&nbsp;<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/cifl2000.png"><img width=200 src="maps/cifl2000.png"></a><br>
-Canada IFL 2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Canada IFL 2000
-</center>
+| Canada IFL 2013 | Canada IFL 2000 |
+|:---------------:|:---------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/cifl2013.png"><img width=200 src="maps/cifl2013.png"></a> | <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/cifl2000.png"><img width=200 src="maps/cifl2000.png"></a> |
 
 ---
 
