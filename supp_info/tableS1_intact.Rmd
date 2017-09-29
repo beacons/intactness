@@ -13,7 +13,7 @@ Intactness datasets can help conservation planners to design and evaluate protec
   - Distribution in Canada and Alaska:
 
 <center>
-<a href="https://github.com/beacons/intactness/blob/master/supp_info/maps/gifl2013.png"><img src="maps/gifl2013.png"></a>&nbsp;&nbsp;<a href="https://github.com/beacons/intactness/blob/master/supp_info/maps/gifl2000.png"><img src="maps/gifl2000.png"></a><br>
+<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/gifl2013.png"><img width=200 src="maps/gifl2013.png"></a>&nbsp;&nbsp;<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/gifl2000.png"><img width=200 src="maps/gifl2000.png"></a><br>
 Global IFL 2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Global IFL 2000
 </center>
 
