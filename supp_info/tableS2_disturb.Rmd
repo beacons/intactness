@@ -1,4 +1,4 @@
-#### Table S2. Examples of recent remote sensing based disturbance datasets from Canada
+### Table S2. Examples of recent remote sensing based disturbance datasets from Canada
 
 Several disturbance datasets have been developed recently, some of which have been used to update both the Canada and Global IFL datasets. The datasets represent changes in forest cover with or without attribution to disturbance type.
 
@@ -22,9 +22,9 @@ Several disturbance datasets have been developed recently, some of which have be
 
   - Website: http://www.abmi.ca/home/data-analytics/da-top/da-product-overview/GIS-Human-Footprint-Land-Cover-Data/HF-inventory.html
 
-<br>
+---
 
-##### References
+### References
 
 Guindon, L, Bernier, P.Y., Beaudion, A, Pouliot, D., Villmaire, P., Hall, R.J., Latifovic, R., St-Amant, R. 2014. Annual mapping of large forest disturbances across Canada's forests using 250m MODIS imagery from 2000 to 2011. Canadian Journal of Forest Research 44(12): 1545-1554.
 

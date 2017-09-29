@@ -1,4 +1,4 @@
-#### Table S1. Description and coverage of intactness maps from Canada and Alaska
+### Table S1. Description and coverage of intactness maps from Canada and Alaska
 
 Intactness datasets can help conservation planners to design and evaluate protected areas. This page describes existing global and regional datasets that measure intactness directly or indirectly i.e., human footprint maps. The geographic focus is on the boreal region of North America.
 
