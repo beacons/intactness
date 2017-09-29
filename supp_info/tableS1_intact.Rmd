@@ -11,8 +11,9 @@ Intactness datasets can help conservation planners to design and evaluate protec
   - View and download data: http://www.intactforests.org/
   - Distribution in Canada and Alaska:
 
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/gifl2013.png"><img width=200 src="maps/gifl2013.png"></a>&nbsp;&nbsp;<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/gifl2000.png"><img width=200 src="maps/gifl2000.png"></a><br>
-Global IFL 2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Global IFL 2000
+| Global IFL 2013 | Global IFL 2000 |
+|:---------------:|:---------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/gifl2013.png"><img width=200 src="maps/gifl2013.png"></a> | <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/gifl2000.png"><img width=200 src="maps/gifl2000.png"></a> |
 
 
 **Human Footprint (Sanderson et al. 2012, Venter et al. 2016).** The Human Footprint maps (HFP 1993, HFP 2009) measures the human influence on the earth's land surface in terms of a Human Influence Index (HII) normalized by biome and realm. Human Footprint values range from 1 to 50. Older version: The Human Footprint (HFP) map measures the human influence on the earth's land surface in terms of a Human Influence Index (HII) normalized by biome and realm. Human Footprint values range from 1 to 100. A score of 1 indicates that the grid cell is part of the 1% least influenced area in its biome. The HII map was created from nine global data layers covering human population pressure (population density, population settlements), human land use and infrastructure (built up areas, nighttime lights, land use/land cover), and human access (coastlines, roads, railroads, navigable rivers). A third map product, The Last of the Wild, highlights the remaining 10% least influenced areas by biome or ecoregion. Version 2 of the maps were published in 2005 by the Wildlife Conservation Society (WCS) and Center for International Earth Science Information Network (CIESIN).
@@ -22,10 +23,10 @@ Global IFL 2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
   - Download data (older version): http://sedac.ciesin.columbia.edu/wildareas/
   - Distribution in Canada and Alaska:
 
-<center>
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/hf2009.png"><img width=200 src="maps/hf2009.png"></a>&nbsp;&nbsp;<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/hf1993.png"><img width=200 src="maps/hf1993.png"></a><br>
-Human Footprint 2009 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Human Footprint 1993
-</center>
+| Human Footprint 2009 | Human Footprint 1993 |
+|:--------------------:|:--------------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/hf2009.png"><img width=200 src="maps/hf2009.png"></a> | <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/hf1993.png"><img width=200 src="maps/hf1993.png"></a> |
+
 
 **Frontier Forests (Bryant et al. 1997).** The Forest Frontiers (FF) map was the first attempt to create a global map of the remaining large, ecologically intact, and relatively undisturbed natural forest landscapes. The map shows where the last remaining large areas of forest remains and provides an assessment of the degree of threat (low or no threat, medium or high threat, unassessed for threat). The maps were created from readily-accessible, but variable, ancillary information such as roads, and numerous experts provided advice and reviews. Unlike the other more recent approaches, Frontier Forests did not use consistent and more recent data sources such as satellite imagery. The Forest Frontiers map was published in 1997 by World Resources Institute.
 
@@ -91,7 +92,7 @@ Canada IFL 2013 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs
   - Website: http://accs.uaa.alaska.edu/?s=Landscape+Integrity
   - View report: http://accs.uaa.alaska.edu/files/rapid-ecoregional-assessments/cyr/CentralYukonREA_SectionF_LandscapeIntegrity.pdf
 
-<center>
+
 <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/lcm1.png"><img width=200 src="maps/lcm1.png"></a><br>Landscape Intactness
 </center>
 
