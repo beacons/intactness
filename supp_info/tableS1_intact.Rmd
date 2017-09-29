@@ -4,7 +4,7 @@ Intactness datasets can help conservation planners to design and evaluate protec
 
 ---
 
-##### North America
+### North America
 
 **Global Intact Forest Landscapes (Potapov et al. 2008, 2017).** The Global Intact Forest Landscapes maps (GIFL 2000, GIFL 2013) describe large unbroken expanses of natural ecosystems for the years 2000 and 2013 within areas of current forest extent, without signs of significant human activity, and having an area of at least 500 km2. The forest zone boundary was defined using a global tree canopy cover dataset (MODIS 500m) and included all areas with a tree canopy cover &gt; 20% in the year 2000. The global IFL maps were created using maps of human settlements and transportation networks and a global coverage of high spatial resolution satellite imagery (Landsat 5 & 7, 30m).
 
@@ -69,7 +69,7 @@ Intactness datasets can help conservation planners to design and evaluate protec
 
 ---
 
-##### Canada
+### Canada
 
 **Canada Intact Forest Landscapes (Lee 2006, Smith and Cheng 2016).** The Intact Forest Landscapes maps (CIFL 2000 and CIFL 2013) depict Canada's remaining forest landscape fragments for the years 2000 and 2013. The datasets use specified size thresholds of 5,000 hectares for boreal regions and 1,000 hectares for temperate forest regions. The map was produced using (i) existing datasets describing major anthropogenic changes/disturbances (e.g., roads, other linear features, reservoirs) to exclude large areas influenced by human activities and (ii) satellite imagery (Landsat 5 and 7, 30m) to identify finer scale anthropogenic disturbances (e.g., cutblocks, cutlines) within candidate intact forest landscapes.
 
@@ -82,7 +82,7 @@ Intactness datasets can help conservation planners to design and evaluate protec
 
 ---
 
-##### Alaska
+### Alaska
 
 **Northwest Boreal LCC Anthropogenic Footprint (Geist et al. 2017).** The Northwest Boreal LCC Anthropogenic Footprint maps the human footprint (currently mining) across interior Alaska and northwestern Canada. The map provides a seamless dataset that spanned state, provincial and territorial boundaries to represent an initial look at intactness in the boreal ecosystems of western Canada and Alaska.
 
@@ -92,11 +92,13 @@ Intactness datasets can help conservation planners to design and evaluate protec
 
 **Alaska Landscape Intactness (Trammell and Aisu 2016).** The landscape condition model (LCM) was developed to measure the impact of the human footprint on a landscape. The LCM weighs the relative influence of different types of human activities to arrive at five condition classes ranging for very low (0.0-0.2) to very high (0.8-1.0) impact. The "very low" class combined with the Alaska IFL was then used to derive a landscape intactness dataset.
 
-<a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/lcm1.png"><img width=200 src="maps/lcm1.png"></a>
 
   - Website: http://accs.uaa.alaska.edu/?s=Landscape+Integrity
   - View report: http://accs.uaa.alaska.edu/files/rapid-ecoregional-assessments/cyr/CentralYukonREA_SectionF_LandscapeIntegrity.pdf
     
+| Landscape Intactness |
+|:--------------------:|
+| <a href="https://raw.githubusercontent.com/beacons/intactness/master/supp_info/maps/lcm1.png"><img width=200 src="maps/lcm1.png"></a> |
 
 
 **Alaska Intact Forest Landscapes (Strittholt et al. 2006).** The Intact Forest Landscapes (IFL) map depicts Alaska's remaining forest landscape fragments using three classes: 5,000-10,000 hectares, 10,000-50,000 hectares, and &gt;50,000 ha. The map was produced using (i) existing datasets describing major anthropogenic changes/disturbances (e.g., roads, other linear features, reservoirs) to exclude large areas influenced by human activities and (ii) satellite imagery (Landsat 5 and 7, 30m) to identify finer scale anthropogenic disturbances (e.g., cutblocks, cutlines) within candidate intact forest landscapes. Note that, similar to the Canada IFL dataset, fires were treated as natural disturbances.
@@ -111,7 +113,7 @@ Intactness datasets can help conservation planners to design and evaluate protec
 
 ---
 
-##### References
+### References
 
 Bryant, D., Nielsen, D., Tangley, L. 1997. The last frontier forests: Ecosystems and economies on the edge. World Resources Institute, Washington, D.C.
 
