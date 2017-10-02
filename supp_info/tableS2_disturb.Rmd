@@ -24,7 +24,7 @@ Several disturbance datasets have been developed recently, some of which have be
 
   - Website: http://www.abmi.ca/home/data-analytics/da-top/da-product-overview/GIS-Human-Footprint-Land-Cover-Data/HF-inventory.html
 
-**Northwest Boreal LCC Anthropogenic Footprint (Geist et al. 2017).** Datasets representing the past and present human footprint across the Northwest Boreal Landscape.
+**Northwest Boreal LCC Anthropogenic Footprint (Geist et al. 2017).** Datasets representing past and present human footprint across the Northwest Boreal Landscape.
 
   - View and download data: http://accs.uaa.alaska.edu/landscape-ecology/northwest-boreal-anthropogenic-footprint/
 
@@ -32,7 +32,7 @@ Several disturbance datasets have been developed recently, some of which have be
 
 ### References
 
-Geist, M., M. Aisu , P. Lema & E. J. Trammell. 2017. Spatial estimates of surface mining footprints in northwest boreal ecoregions of Alaska and Canada.
+Geist, M., M. Aisu , P. Lema & E. J. Trammell. 2017. Spatial estimates of surface mining footprints in northwest boreal ecoregions of Alaska and Canada. URL: http://accs.uaa.alaska.edu/landscape-ecology/northwest-boreal-anthropogenic-footprint/
 
 Guindon, L, Bernier, P.Y., Beaudion, A, Pouliot, D., Villmaire, P., Hall, R.J., Latifovic, R., St-Amant, R. 2014. Annual mapping of large forest disturbances across Canada's forests using 250m MODIS imagery from 2000 to 2011. Canadian Journal of Forest Research 44(12): 1545-1554.
 
