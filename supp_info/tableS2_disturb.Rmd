@@ -8,7 +8,7 @@ Several disturbance datasets have been developed recently, some of which have be
   
   - View and download data: https://earthenginepartners.appspot.com/science-2013-global-forest
 
-**Boreal ecosystem anthropogenic disturbance (BEAD) layers for Canada (Pasher et al. 2013).** A vector disturbance dataset of unbuffered individual linear and polygonal disturbance types covering 51 caribou ranges in Canada. The dataset is based on 2008-2010 Landsat imagery and each disturbance type was also gridded to a 1 km2 resolution and represent total km2/km2 for polygonal disturbances and km/km2for linear disturbances. In total, nineteen individual raster layers were produced including layers representing total polygonal and linear disturbances. The dataset was updated for some ranges in 2012 and 500m buffers were applied.
+**Boreal ecosystem anthropogenic disturbance (BEAD) layers for Canada (Pasher et al. 2013).** A vector disturbance dataset of unbuffered individual linear and polygonal disturbance types covering 51 caribou ranges in Canada. The dataset is based on 2008-2010 Landsat imagery and each disturbance type was also gridded to a 1 km<sup>2</sup> resolution and represent total km<sup>2</sup>/km<sup>2</sup> for polygonal disturbances and km/km<sup>2</sup> for linear disturbances. In total, nineteen individual raster layers were produced including layers representing total polygonal and linear disturbances. The dataset was updated for some ranges in 2012 and 500m buffers were applied.
   
   - Download data: http://open.canada.ca/data/en/dataset?q=Boreal+ecosystem+anthropogenic+disturbance
 
@@ -24,7 +24,7 @@ Several disturbance datasets have been developed recently, some of which have be
 
   - Website: http://www.abmi.ca/home/data-analytics/da-top/da-product-overview/GIS-Human-Footprint-Land-Cover-Data/HF-inventory.html
 
-**Northwest Boreal LCC Anthropogenic Footprint (Geist et al. 2017).** Datasets representing past and present human footprint across the Northwest Boreal Landscape.
+**Northwest Boreal LCC Anthropogenic Footprint (Geist et al. 2017).** Datasets representing past and present human footprint across the Northwest Boreal Landscape. Currently, only the mining footprint layer is available. It was created by digitizing visible mining footprints using best available digital imagery layers (primarily GeoNorth Ortho WMS layer and ESRI global imagery service) and represents a snapshot in time during the period between 2010-2016.
 
   - View and download data: http://accs.uaa.alaska.edu/landscape-ecology/northwest-boreal-anthropogenic-footprint/
 
