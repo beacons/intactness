@@ -4,10 +4,10 @@ docs/
 grass/
 notes/
 python/
-supp_info_rmd/
 R/
 *.log
 *.otl
 Rgui.lnk
+Rgui_weasel.lnk
 .Rhistory
 si.r
