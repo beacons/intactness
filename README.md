@@ -6,7 +6,7 @@ Evaluation of intactness datasets for conservation planning in the boreal region
 
 ## Manuscript
 
-Vernier et al. <i>in prep</i>. Intactness in the Boreal Region of North America: A Comparative Review of Global and Regional Maps.
+Beacons et al. <i>in prep</i>. Intactness in the Boreal Region of North America: A Comparative Review of Global and Regional Maps.
 
 ## Supplementary material
 
