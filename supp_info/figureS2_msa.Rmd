@@ -1,0 +1,10 @@
+<br>
+**Figure S1.** Comparison of reclassification schemes for the MSA map using 80, 85, 90, and 95% cutoffs.
+
+![](maps/msa80_ca.png)
+
+![](maps/msa85_ca.png)
+
+![](maps/msa90_ca.png)
+
+![](maps/msa95_ca.png)
