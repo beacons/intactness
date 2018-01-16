@@ -28,6 +28,22 @@ r1cg <- mask(r1c, cifl_gifl)
 # CIFL2013 X ...
 ################################################################################
 
+# HF 2010
+r3 = raster("../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif")
+r3 <- mask(r3, cifl_gifl)
+r3c <- cover(r3, b0)
+r3c <- r3c * 2
+r <- r1cg + r3c
+r <- ratify(r)
+rat <- levels(r)[[1]]
+rat$intact <- c('Agreement (both non-intact)','Disagreement (CIFL intact)','Disagreement (HA intact)','Agreement (both intact)')
+levels(r) <- rat
+png("supp_info/maps/cifl2013_x_ha2010.png", width = 1200, height = 450)
+levelplot(r, col.regions=c('darkgreen','yellow','red','blue'), colorkey=TRUE, margin=F, scales=list(draw=FALSE)) + 
+	layer(sp.polygons(v, lwd=1, col="black")) +
+	layer(panel.text(3500000, 7300000, "CIFL2013 x HA2010", font=18, col="black", cex=1.5))
+dev.off()
+
 # GIFL 2013
 r3 = raster("../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif")
 r3 <- mask(r3, cifl_gifl)
@@ -131,6 +147,23 @@ dev.off()
 # GIFL2013 X ...
 ################################################################################
 
+# HA 2010
+r5 = raster("../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif")
+NAvalue(r5) <- 128
+r5 <- mask(r5, cifl_bnd)
+r5c <- cover(r5, b0)
+r5c <- r5c * 2
+r <- r3c/2 + r5c
+r <- ratify(r)
+rat <- levels(r)[[1]]
+rat$intact <- c('Agreement (both non-intact)','Disagreement (HA intact)','Agreement (both intact)')
+levels(r) <- rat
+png("supp_info/maps/gifl2013_x_ha2010.png", width = 1200, height = 450)
+levelplot(r, col.regions=c('darkgreen','red','blue'), colorkey=TRUE, margin=F, scales=list(draw=FALSE)) + 
+	layer(sp.polygons(v, lwd=1, col="black")) +
+	layer(panel.text(3500000, 7300000, "GIFL2013 x HA2010", font=18, col="black", cex=1.5))
+dev.off()
+
 # HF 2009
 r5 = raster("../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif")
 NAvalue(r5) <- 128
@@ -218,6 +251,22 @@ dev.off()
 # HF2009 X ...
 ################################################################################
 
+# HA 2010
+r7 = raster("../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif")
+r7 <- mask(r7, cifl_bnd)
+r7c <- cover(r7, b0)
+r7c <- r7c * 2
+r <- r5c/2 + r7c
+r <- ratify(r)
+rat <- levels(r)[[1]]
+rat$intact <- c('Agreement (both non-intact)','Agreement (both intact)')
+levels(r) <- rat
+png("supp_info/maps/hf2009_x_ha2010.png", width = 1200, height = 450)
+levelplot(r, col.regions=c('darkgreen','blue'), colorkey=TRUE, margin=F, scales=list(draw=FALSE)) + 
+	layer(sp.polygons(v, lwd=1, col="black")) +
+	layer(panel.text(3500000, 7300000, "HF2009 x HA2010", font=18, col="black", cex=1.5))
+dev.off()
+
 # FF 1997
 r7 = raster("../../gisdata/intactness/analysis/ca_boreal1000/ff.tif")
 r7 <- mask(r7, cifl_bnd)
@@ -288,6 +337,22 @@ dev.off()
 # FF X ...
 ################################################################################
 
+# HA 2010
+r8 = raster("../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif")
+r8 <- mask(r8, cifl_bnd)
+r8c <- cover(r8, b0)
+r8c <- r8c * 2
+r <- r7c/2 + r8c
+r <- ratify(r)
+rat <- levels(r)[[1]]
+rat$intact <- c('Agreement (both non-intact)','Agreement (both intact)')
+levels(r) <- rat
+png("supp_info/maps/ff_x_ha2010.png", width = 1200, height = 450)
+levelplot(r, col.regions=c('darkgreen','blue'), colorkey=TRUE, margin=F, scales=list(draw=FALSE)) + 
+	layer(sp.polygons(v, lwd=1, col="black")) +
+	layer(panel.text(3500000, 7300000, "FF x HA2010", font=18, col="black", cex=1.5))
+dev.off()
+
 # Unused
 r8 = raster("../../gisdata/intactness/analysis/ca_boreal1000/un100.tif")
 r8 <- mask(r8, cifl_bnd)
@@ -342,6 +407,23 @@ dev.off()
 # UNUSED X ...
 ################################################################################
 
+# HA2010
+r9 = raster("../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif")
+NAvalue(r9) <- 128
+r9 <- mask(r9, cifl_bnd)
+r9c <- cover(r9, b0)
+r9c <- r9c * 2
+r <- r8c/2 + r9c
+r <- ratify(r)
+rat <- levels(r)[[1]]
+rat$intact <- c('Agreement (both non-intact)','Agreement (both intact)')
+levels(r) <- rat
+png("supp_info/maps/unused_x_ha2010.png", width = 1200, height = 450)
+levelplot(r, col.regions=c('darkgreen','blue'), colorkey=TRUE, margin=F, scales=list(draw=FALSE)) + 
+	layer(sp.polygons(v, lwd=1, col="black")) +
+	layer(panel.text(3500000, 7300000, "UNUSED x HA2010", font=18, col="black", cex=1.5))
+dev.off()
+
 # Wild
 r9 = raster("../../gisdata/intactness/analysis/ca_boreal1000/wild.tif")
 NAvalue(r9) <- 128
@@ -379,6 +461,22 @@ dev.off()
 ################################################################################
 # WILD X ...
 ################################################################################
+
+# HA2010
+r10 = raster("../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif")
+r10 <- mask(r10, cifl_bnd)
+r10c <- cover(r10, b0)
+r10c <- r10c * 2
+r <- r9c/2 + r10c
+r <- ratify(r)
+rat <- levels(r)[[1]]
+rat$intact <- c('Agreement (both non-intact)','Agreement (both intact)')
+levels(r) <- rat
+png("supp_info/maps/wild_x_ha2010.png", width = 1200, height = 450)
+levelplot(r, col.regions=c('darkgreen','blue'), colorkey=TRUE, margin=F, scales=list(draw=FALSE)) + 
+	layer(sp.polygons(v, lwd=1, col="black")) +
+	layer(panel.text(3500000, 7300000, "WILD x HA2010", font=18, col="black", cex=1.5))
+dev.off()
 
 # MSA90
 r10 = raster("../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif")

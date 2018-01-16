@@ -1,5 +1,5 @@
 # Pixel level Comparison
-# PV 2017-09-06
+# PV 2018-01-03
 # caret::confusionMatrix
 # x$byClass["Specificity"] = fraction of intact pixels in map1 also mapped as intact in map2
 # x$byClass["Neg Pred Value"] = fraction of intact pixels in map2 also mapped as intact in map1
@@ -32,30 +32,35 @@ validate <- function(map1, map2, na1, na2, mask) {
 }
 
 mask = "../../gisdata/intactness/analysis/ca_boreal1000/cifl_gifl.tif"
+x1a <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/cifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif", na1="", na2="", mask)
 x1 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/cifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif", na1="", na2="", mask)
 x2 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/cifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif", na1="", na2=128, mask)
 x3 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/cifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ff.tif", na1="", na2="", mask)
 x4 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/cifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/un100.tif", na1="", na2="", mask)
 x5 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/cifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/wild.tif", na1="", na2=128, mask)
 x6 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/cifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif", na1="", na2="", mask)
+x7a <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif", na1="", na2=128, mask)
 x7 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif", na1="", na2=128, mask)
 x8 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ff.tif", na1="", na2="", mask)
 x9 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/un100.tif", na1="", na2="", mask)
 x10 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/wild.tif", na1="", na2=128, mask)
 x11 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/gifl2013.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif", na1="", na2="", mask)
+x12a <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif", na1=128, na2="", mask)
 x12 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ff.tif", na1=128, na2="", mask)
 x13 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/un100.tif", na1=128, na2="", mask)
 x14 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/wild.tif", na1=128, na2=128, mask)
 x15 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/hf2009.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif", na1=128, na2="", mask)
+x16a <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/ff.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif", na1="", na2="", mask)
 x16 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/ff.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/un100.tif", na1="", na2="", mask)
 x17 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/ff.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/wild.tif", na1="", na2=128, mask)
 x18 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/ff.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif", na1="", na2="", mask)
+x19a <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/un100.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif", na1="", na2=128, mask)
 x19 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/un100.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/wild.tif", na1="", na2=128, mask)
 x20 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/un100.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif", na1="", na2="", mask)
+x21a <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/wild.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif", na1=128, na2="", mask)
 x21 <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/wild.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif", na1=128, na2="", mask)
+x22a <- validate(map1="../../gisdata/intactness/analysis/ca_boreal1000/msa90.tif", map2="../../gisdata/intactness/analysis/ca_boreal1000/ha2010.tif", na1=128, na2="", mask)
 
-# x$byClass["Specificity"] = fraction of intact pixels in map1 also mapped as intact in map2
-# x$byClass["Neg Pred Value"] = fraction of intact pixels in map2 also mapped as intact in map1
 f <- tibble(map=c("CIFL2013","GIFL2013","HF2009","FF","UNUSED","WILD","MSA"),CIFL2013=c(1,0,0,0,0,0,0),GIFL2013=c(0,1,0,0,0,0,0),HF2009=c(0,0,1,0,0,0,0),FF=c(0,0,0,1,0,0,0),UNUSED=c(0,0,0,0,1,0,0),WILD=c(0,0,0,0,0,1,0),MSA=c(0,0,0,0,0,0,1))
 f[2,2] = paste0(round(x1$byClass["Specificity"],2)," (",x1$table[1,2],")")
 f[3,2] = paste0(round(x2$byClass["Specificity"],2)," (",x2$table[1,2],")")
@@ -101,7 +106,28 @@ f[5,7] = paste0(round(x19$byClass["Neg Pred Value"],2)," (",x19$table[2,1],")")
 f[5,8] = paste0(round(x20$byClass["Neg Pred Value"],2)," (",x20$table[2,1],")")
 f[6,8] = paste0(round(x21$byClass["Neg Pred Value"],2)," (",x21$table[2,1],")")
 
-write_csv(f, "docs/tables/ca_pixel_confusion_matrix_proportion.csv")
+
+col1 = c(paste0(round(x1a$byClass["Specificity"],2)," (",x1a$table[1,2],")"),
+		paste0(round(x7a$byClass["Specificity"],2)," (",x7a$table[1,2],")"),
+		paste0(round(x12a$byClass["Specificity"],2)," (",x12a$table[1,2],")"),
+		paste0(round(x16a$byClass["Specificity"],2)," (",x16a$table[1,2],")"),
+		paste0(round(x19a$byClass["Specificity"],2)," (",x19a$table[1,2],")"),
+		paste0(round(x21a$byClass["Specificity"],2)," (",x21a$table[1,2],")"),
+		paste0(round(x22a$byClass["Specificity"],2)," (",x22a$table[1,2],")"))
+
+row1 = c(paste0(round(x1a$byClass["Neg Pred Value"],2)," (",x1a$table[2,1],")"),
+		paste0(round(x7a$byClass["Neg Pred Value"],2)," (",x7a$table[2,1],")"),
+		paste0(round(x12a$byClass["Neg Pred Value"],2)," (",x12a$table[2,1],")"),
+		paste0(round(x16a$byClass["Neg Pred Value"],2)," (",x16a$table[2,1],")"),
+		paste0(round(x19a$byClass["Neg Pred Value"],2)," (",x19a$table[2,1],")"),
+		paste0(round(x21a$byClass["Neg Pred Value"],2)," (",x21a$table[2,1],")"),
+		paste0(round(x22a$byClass["Neg Pred Value"],2)," (",x22a$table[2,1],")"))
+
+f[8,] <- c("HA2010",row1)
+f$HA2010 <- c(0,0,0,0,0,0,0,1)
+ff <- f[c(8,1,2,3,4,5,6,7),c("map","HA2010","CIFL2013","GIFL2013","HF2009","FF","UNUSED","WILD","MSA")]
+ff[,2] <- c(1,col1)
+write_csv(ff, "output/ca_pixel_confusion_matrix_proportion.csv")
 
 
 accuracy <- function() {
@@ -132,3 +158,4 @@ accuracy <- function() {
 
 	write_csv(f, "docs/tables/ca_pixel_confusion_matrix_kappa.csv")
 }
+#accuracy()

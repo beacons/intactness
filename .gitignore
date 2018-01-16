@@ -1,8 +1,7 @@
 case_study/
 data/
 docs/
-grass/
-notes/
+output/
 python/
 R/
 *.log
@@ -11,3 +10,8 @@ Rgui.lnk
 Rgui_weasel.lnk
 .Rhistory
 si.r
+01_gen_data.py
+02_run_analyses.R
+03_gen_figures.R
+04_gen_reports.R
+readme.txt
