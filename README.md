@@ -8,7 +8,7 @@ Comparison of intactness datasets for conservation planning in the boreal region
 
 Vernier et al. <i>in prep</i>. Comparing global and regional maps of intactness in the boreal region of North America: implications for conservation planning in one of the world’s remaining wilderness areas
 
-## Supplementary material
+## Supplementary material (needs updating!)
 
 * [S1 Fig. Distribution of intactness datasets within the boreal region of North America](https://github.com/beacons/intactness/blob/master/supp_info/figureS1_cover.Rmd)
 * [S2 Fig. Cross-classification of intactness maps within the area of intersection of all datasets](https://github.com/beacons/intactness/blob/master/supp_info/figureS3_cross.Rmd)
