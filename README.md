@@ -1,6 +1,6 @@
 # Intactness Project
 
-Revised: January 16, 2018
+Revised: 2020-04-07
 
 Comparison of intactness datasets for conservation planning in the boreal region of North America.
 
