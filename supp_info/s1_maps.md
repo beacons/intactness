@@ -22,7 +22,7 @@ The global Intact Forest Landscapes maps describe large unbroken expanses of nat
   - References: Potapov et al. 2008, 2017
   - Website: http://www.intactforests.org/
 
-<center><a href="maps/ak_gifl2016.png"><img width=200 src="maps/ak_gifl2016.png"></a><a href="maps/ca_gifl2016.png"><img width=200 src="maps/ca_gifl2016.png"></a></center>
+ <a href="maps/ak_gifl2016.png"><img width=400 src="maps/ak_gifl2016.png"></a><a href="maps/ca_gifl2016.png"><img width=400 src="maps/ca_gifl2016.png"></a> 
 
 
 
@@ -34,7 +34,7 @@ The Forest Frontiers map was the first attempt to create a global map of the rem
   - References: Bryant et al. 1997
   - Website: http://www.wri.org/publication/last-frontier-forests
 
-<center><a href="maps/ak_ff1996.png"><img width=200 src="maps/ak_ff1996.png"></a><a href="maps/ca_ff1996.png"><img width=200 src="maps/ca_ff1996.png"></a></center>
+ <a href="maps/ak_ff1996.png"><img width=400 src="maps/ak_ff1996.png"></a><a href="maps/ca_ff1996.png"><img width=400 src="maps/ca_ff1996.png"></a> 
 
 
 
@@ -46,7 +46,7 @@ The Intact Forest Landscapes maps (CIFL 2000 and CIFL 2013; ) depict Canada's re
   - References: Lee 2006, Smith and Cheng 2016
   - Website: https://databasin.org/datasets/a1d3559466574164a4f99be6a2445cea
 
-<center><a href="maps/ca_cifl2013.png"><img width=200 src="maps/ca_cifl2013.png"></a></center>
+ <a href="maps/ca_cifl2013.png"><img width=400 src="maps/ca_cifl2013.png"></a> 
 
 
 
@@ -62,7 +62,7 @@ The Human Footprint maps measures the human influence on the earth's land surfac
   - References: Sanderson et al. 2002, Venter et al. 2016a, 2016b
   - Website: http://datadryad.org/resource/doi:10.5061/dryad.052q5
 
-<center><a href="maps/ak_hfp2009.png"><img width=200 src="maps/ak_hfp2009.png"></a><a href="maps/ca_hfp2009.png"><img width=200 src="maps/ca_hfp2009.png"></a></center>
+ <a href="maps/ak_hfp2009.png"><img width=400 src="maps/ak_hfp2009.png"></a><a href="maps/ca_hfp2009.png"><img width=400 src="maps/ca_hfp2009.png"></a> 
 
 
 
@@ -74,7 +74,7 @@ The global Human Modification map provides a cumulative measure of human modific
   - References: Kennedy et al. 2019
   - Website: https://figshare.com/articles/Global_Human_Modification/7283087
 
-<center><a href="maps/ak_ghm2015.png"><img width=200 src="maps/ak_ghm2015.png"></a><a href="maps/ca_ghm2015.png"><img width=200 src="maps/ca_ghm2015.png"></a></center>
+ <a href="maps/ak_ghm2015.png"><img width=400 src="maps/ak_ghm2015.png"></a><a href="maps/ca_ghm2015.png"><img width=400 src="maps/ca_ghm2015.png"></a> 
 
 
 
@@ -86,7 +86,7 @@ The Low Impact Areas dataset uses open-access, frequently updated data sets on t
   - References: Jacobson et al. 2019
   - Website: https://datadryad.org/stash/dataset/doi:10.5061/dryad.z612jm67g
 
-<center><a href="maps/ak_vlia2015.png"><img width=200 src="maps/ak_vlia2015.png"></a><a href="maps/ca_vlia2015.png"><img width=200 src="maps/ca_vlia2015.png"></a></center>
+ <a href="maps/ak_vlia2015.png"><img width=400 src="maps/ak_vlia2015.png"></a><a href="maps/ca_vlia2015.png"><img width=400 src="maps/ca_vlia2015.png"></a> 
 
 
 
@@ -98,7 +98,7 @@ Global Forest Watch Canada's Human Access dataset is current to circa 2010. Huma
   - References: Lee and Cheng 2014
   - Website: https://globalforestwatch.ca/sites/gfwc/files/data/20140109B_Canada_Access_2010_metadata.html
 
-<center><a href="maps/ca_ha2010.png"><img width=200 src="maps/ca_ha2010.png"></a></center>
+ <a href="maps/ca_ha2010.png"><img width=400 src="maps/ca_ha2010.png"></a> 
 
 
 
@@ -110,7 +110,7 @@ Boreal ecosystem anthropogenic disturbance (BEAD) layers for Canada . A vector d
   - References: Pasher et al. 2013
   - Website: http://open.canada.ca/data/en/dataset?q=Boreal+ecosystem+anthropogenic+disturbance
 
-<center><a href="maps/ca_bead2010.png"><img width=200 src="maps/ca_bead2010.png"></a></center>
+ <a href="maps/ca_bead2010.png"><img width=400 src="maps/ca_bead2010.png"></a> 
 
 
 
@@ -122,7 +122,7 @@ Anthropogenic Biomes. From The Encyclopedia of Earth: "Anthropogenic biomes desc
   - References: Ellis and Ramankutty 2010
   - Website: http://www.ecotope.org/anthromes/v2/data/
 
-<center><a href="maps/ak_ab2000.png"><img width=200 src="maps/ak_ab2000.png"></a><a href="maps/ca_ab2000.png"><img width=200 src="maps/ca_ab2000.png"></a></center>
+ <a href="maps/ak_ab2000.png"><img width=400 src="maps/ak_ab2000.png"></a><a href="maps/ca_ab2000.png"><img width=400 src="maps/ca_ab2000.png"></a> 
 
 
 
