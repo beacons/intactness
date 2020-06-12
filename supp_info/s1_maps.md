@@ -1,6 +1,6 @@
 # Intactness and Cumulative Disturbance Datasets Used in Analysis
 
-Revised: 2020-04-22
+Revised: 2020-06-10
 
 
 
@@ -60,11 +60,11 @@ Human Footprint data are a standardized measure of cumulative human pressures on
 
 The Human Footprint maps measures the human influence on the earth's land surface in terms of a Human Influence Index (HII) normalized by biome and realm. Human Footprint values range from 1 to 50. Older version: The Human Footprint (HFP) map measures the human influence on the earth's land surface in terms of a Human Influence Index (HII) normalized by biome and realm. Human Footprint values range from 1 to 100. A score of 1 indicates that the grid cell is part of the 1% least influenced area in its biome. The HII map was created from nine global data layers covering human population pressure (population density, population settlements), human land use and infrastructure (built up areas, nighttime lights, land use/land cover), and human access (coastlines, roads, railroads, navigable rivers). A third map product, The Last of the Wild, highlights the remaining 10% least influenced areas by biome or ecoregion. Version 2 of the maps were published in 2005 by the Wildlife Conservation Society (WCS) and Center for International Earth Science Information Network (CIESIN).
 
-  - Data years: 1993, 2009
+  - Data years: 1993, 2009; 2000, 2005, 2010, 2013
   - References: Sanderson et al. 2002, Venter et al. 2016a, 2016b
   - Website: http://datadryad.org/resource/doi:10.5061/dryad.052q5
 
- <a href="maps/ak_hfp2009.png"><img width=400 src="maps/ak_hfp2009.png"></a><a href="maps/ca_hfp2009.png"><img width=400 src="maps/ca_hfp2009.png"></a> 
+ <a href="maps/ak_hfp2013.png"><img width=400 src="maps/ak_hfp2013.png"></a><a href="maps/ca_hfp2013.png"><img width=400 src="maps/ca_hfp2013.png"></a> 
 
 
 
@@ -72,11 +72,11 @@ The Human Footprint maps measures the human influence on the earth's land surfac
 
 The global Human Modification map provides a cumulative measure of human modification of terrestrial lands across the globe at a 1-km2 resolution. It is a continuous 0-1 metric that reflects the proportion of a landscape modified based on modeling the physical extents of 13 anthropogenic stressors and their estimated impacts using spatially-explicit global datasets with a median year of 2016.
 
-  - Data years: 2015
+  - Data years: 2016
   - References: Kennedy et al. 2019
   - Website: https://figshare.com/articles/Global_Human_Modification/7283087
 
- <a href="maps/ak_ghm2015.png"><img width=400 src="maps/ak_ghm2015.png"></a><a href="maps/ca_ghm2015.png"><img width=400 src="maps/ca_ghm2015.png"></a> 
+ <a href="maps/ak_ghm2016.png"><img width=400 src="maps/ak_ghm2016.png"></a><a href="maps/ca_ghm2016.png"><img width=400 src="maps/ca_ghm2016.png"></a> 
 
 
 
@@ -118,13 +118,15 @@ Boreal ecosystem anthropogenic disturbance (BEAD) layers for Canada. A vector di
 
 ### Anthropogenic Biomes
 
+Note: Description needs to be updated to reflect latest datasets.
+
 Anthropogenic biomes (anthromes) characterize the human-altered form and dynamics of terrestrial ecosystems14. They denote long-term patterns in human populations and their land use, taking into account population density, agricultural village development, percentage cover by crops, pasture and rice, irrigated land area and areas potentially covered by trees52,53. Anthromes version 2 data were calculated using a 100 km2 equal area hexagonal discrete global grid format. For presentation, we grouped anthromes as either low intensity or high intensity to show differences in use between Indigenous Peoples’ and other lands. Remote rangelands, remote woodlands, inhabited treeless and barren lands, wild woodlands and wild treeless and barren lands anthromes were classified as low intensity; urban, dense settlement, rice village, irrigated village, rainfed village, pastoral village, residential irrigated croplands, residential rainfed croplands and populated croplands were classified as high intensity.
 
 Anthropogenic Biomes. From The Encyclopedia of Earth: "Anthropogenic biomes describe globally-significant ecological patterns within the terrestrial biosphere caused by sustained direct human interaction with ecosystems, including agriculture, urbanization, forestry and other land uses. Conventional biomes, such as tropical rainforests or grasslands, are based on global vegetation patterns related to climate. Now that humans have fundamentally altered global patterns of ecosystem form, process, and biodiversity, anthropogenic biomes provide a contemporary view of the terrestrial biosphere in its human-altered form. Anthropogenic biomes may also be termed "anthromes" to distinguish them from conventional biome systems, or "human biomes" (a simpler but less precise term)". The three wildland categories (wild forest, sparse trees, and barren) are of primary interest.
 
-  - Data years: 2010
-  - References: Ellis and Ramankutty 2010
-  - Website: http://www.ecotope.org/anthromes/v2/data/
+  - Data years: 2000-2015
+  - References: Ellis et al. 2020
+  - Website: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/G0QDNQ
 
  <a href="maps/ak_ab2000.png"><img width=400 src="maps/ak_ab2000.png"></a><a href="maps/ca_ab2000.png"><img width=400 src="maps/ca_ab2000.png"></a> 
 
@@ -136,7 +138,9 @@ Bryant, D., Nielsen, D., Tangley, L. 1997. The last frontier forests: Ecosystems
 
 Ellis, E.C., and Ramankutty, N., 2008. Putting people in the map: anthropogenic biomes of the world. Frontiers in Ecology and the Environment 6, <doi:10.1890/070062>. URL: <http://www.esajournals.org/doi/abs/10.1890/070062>
 
-Ellis, E. C., K. Klein Goldewijk, S. Siebert, D. Lightman, and N. Ramankutty. 2010. Anthropogenic transformation of the biomes, 1700 to 2000. Global Ecology and Biogeography 19(5):589-606
+Ellis, E.C., K. Klein Goldewijk, S. Siebert, D. Lightman, and N. Ramankutty. 2010. Anthropogenic transformation of the biomes, 1700 to 2000. Global Ecology and Biogeography 19(5):589-606
+
+Ellis, E.C., Beusen, A.H., Goldewijk, K.K. 2020. Anthropogenic Biomes: 10,000 BCE to 2015 CE. Land 9(5), 129.
 
 Jacobson, A.P., Riggio, J., Tait, A.M. and Baillie, J.E. 2019. Global areas of low human impact (Low Impact Areas) and fragmentation of the natural world. Scientific reports 9(1):1-13. http://dx.doi.org/10.1038/s41598-019-50558-6
 
