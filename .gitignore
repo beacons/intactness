@@ -2,3 +2,7 @@ archive/
 code/**
 data/**
 docs/**
+grass/**
+manuscript/**
+supp_info/maps_old/**
+supp_info/shiny/**
