@@ -59,7 +59,7 @@ The Intact Forest Landscapes maps (CIFL 2000 and CIFL 2013; ) depict Canada's re
 Human Footprint data are a standardized measure of cumulative human pressures on the environment that take into account the extent of built environments, crop land, pasture land, human population density, night-time lights, railways, roads and navigable waterways. The Human Footprint ranges between values of 0 and 50, calculated at a 1 km2 resolution across the Earth’s terrestrial surface. A value of 0 is equivalent to no detectable human pressures of the type incorporated in the index. Human Footprint maps were originally available for 1993 and 2009 but were recently revised for the year 2000, 2005, 2010, and 2013.
 
   - Data years: 1993, 2009; 2000, 2005, 2010, 2013
-  - References: Sanderson et al. 2002, Venter et al. 2016a, 2016b
+  - References: Sanderson et al. 2002, Venter et al. 2016a, 2016b, Williams et al. 2020
   - Website (1993, 2009): http://datadryad.org/resource/doi:10.5061/dryad.052q5
   - Website (2000, 2005, 2010, 2013): https://github.com/scabecks/humanfootprint_2000-2013
 
@@ -162,3 +162,5 @@ Smith, W. and Cheng, R. 2016. Canada's Intact Forest Landscapes Updated to 2013.
 Venter, O. et al. 2016a Global terrestrial Human Footprint maps for 1993 and 2009. Sci. Data 3, 160067.
 
 Venter, O. et al. 2016b. Sixteen years of change in the global terrestrial human footprint and implications for biodiversity conservation. Nat. Commun. 7, 12558
+
+Williams, Brooke Anne and Venter, Oscar and Allan, James R. and Atkinson, Scott C. and Rehbein, Jose A. and Ward, Michelle S. and Di Marco, Moreno and Grantham, Hedley S. and Ervin, Jamison and Goetz, Scott and Hansen, Andrew J. and Jantz, Patrick and Pillay, Rajeev and Rodríguez-Buriticá, Susana and Supples, Christina and Virnig, Anne L. S. and Watson, James E.M., Change in Terrestrial Human Footprint Drives Continued Loss of Intact Ecosystems. ONE-EARTH-D-20-00100. Available at SSRN: https://ssrn.com/abstract=3600547 or http://dx.doi.org/10.2139/ssrn.3600547
