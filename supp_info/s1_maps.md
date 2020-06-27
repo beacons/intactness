@@ -125,7 +125,7 @@ Anthropogenic biomes (anthromes) characterize the human-altered form and dynamic
   - References: Ellis et al. 2020
   - Website: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/G0QDNQ
 
- <a href="maps/ak_ab2000.png"><img width=400 src="maps/ak_ab2000.png"></a><a href="maps/ca_ab2000.png"><img width=400 src="maps/ca_ab2000.png"></a> 
+ <a href="maps/ak_ab2015.png"><img width=400 src="maps/ak_ab2015.png"></a><a href="maps/ca_ab2015.png"><img width=400 src="maps/ca_ab2015.png"></a> 
 
 
 
