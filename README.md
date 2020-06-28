@@ -1,6 +1,6 @@
 # Intactness Project
 
-Revised: 2020-06-25
+Revised: 2020-06-28
 
 
 
@@ -16,8 +16,4 @@ Vernier et al. <i>in prep</i>. Comparing global and regional maps of intactness 
 
 ## Supplementary material
 
-* [S1 - Intactness and Cumulative Disturbance Datasets Used in Analysis](https://github.com/beacons/intactness/blob/master/supp_info/s1_maps.md)
-
-* [S2 - Case studies from the boreal region](https://htmlpreview.github.io/?https://github.com/prvernier/intactness/blob/master/supp_info/case_studies.html)
-
-* S3 - Shiny app demonstrating how to create a simple and flexible regional intactness map.
+* [Intactness and human pressured datasets used in the analysis](https://github.com/beacons/intactness/blob/master/supp_info/s1_maps.md)
