@@ -137,7 +137,7 @@ Ellis, E.C., and Ramankutty, N., 2008. Putting people in the map: anthropogenic 
 
 Ellis, E.C., K. Klein Goldewijk, S. Siebert, D. Lightman, and N. Ramankutty. 2010. Anthropogenic transformation of the biomes, 1700 to 2000. Global Ecology and Biogeography 19(5):589-606
 
-Ellis, E.C., Beusen, A.H., Goldewijk, K.K. 2020. Anthropogenic Biomes: 10,000 BCE to 2015 CE. Land 9(5), 129.
+Ellis, E.C., Beusen, A.H., Goldewijk, K.K. 2020. Anthropogenic Biomes: 10,000 BCE to 2015 CE. Land 9(5), 129. https://doi.org/10.3390/land9050129
 
 Jacobson, A.P., Riggio, J., Tait, A.M. and Baillie, J.E. 2019. Global areas of low human impact (Low Impact Areas) and fragmentation of the natural world. Scientific reports 9(1):1-13. http://dx.doi.org/10.1038/s41598-019-50558-6
 
