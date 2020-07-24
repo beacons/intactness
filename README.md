@@ -17,5 +17,5 @@ Vernier et al. <i>in prep</i>. Comparing global and regional maps of intactness 
 ## Supplementary material
 
 * [Description of intactness and human influence datasets within the boreal region of Canada and Alaska.](https://github.com/beacons/intactness/blob/master/s1_datasets.md)
-* [Effectiveness of intactness and human influence maps at identifying disturbances related to placer mining in the Yukon.](https://github.com/beacons/intactness/blob/master/s2_case_study_1.html)
-* [Sensitivity of intactness estimates to buffer size and minimum patch size.](https://github.com/beacons/intactness/blob/master/s3_case_study_2.html)
+* [Effectiveness of intactness and human influence maps at identifying disturbances related to placer mining in the Yukon.](https://htmlpreview.github.io/?https://github.com/beacons/intactness/blob/master/s2_case_study_1.html)
+* [Sensitivity of intactness estimates to buffer size and minimum patch size.](https://htmlpreview.github.io/?https://github.com/beacons/intactness/blob/master/s3_case_study_2.html)
