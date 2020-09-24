@@ -1,8 +1,15 @@
-# Intactness and Cumulative Disturbance Datasets Used in Analysis
+---
+title: "Intactness and Cumulative Disturbance Datasets Used in Analysis"
+date: "July 27, 2020"
+author: "Vernier et al."
+output:
+  html_document:
+    keep_md: true
+    toc: false
+    css: styles.css
+---
 
-Revised: 2020-06-25
-
-
+---
 
 ## Introduction
 
