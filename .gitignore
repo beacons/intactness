@@ -1,11 +1,2 @@
-archive/
-code/
 data/
-docs/
-grass/
-manuscript/
-shiny/
-supp_info/maps_old/
-supp_info/shiny/
-tmp
-BEACONS.lnk
+Rgui.lnk
