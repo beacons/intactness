@@ -1,6 +1,6 @@
 # Intactness Project
 
-Revised: 2020-11-08
+Revised: 2020-11-10
 
 
 Comparison of intactness datasets for conservation planning in the boreal region of North America.
@@ -22,24 +22,23 @@ Vernier et al. <i>in prep</i>. Comparing global and regional maps of intactness 
 
 ### Prepare data
 
-01_gen_canada_data.R - Prepare datasets for coverage estimation within Brandt's boreal region in Canada
-02_gen_alaska_data.R - Prepare datasets for coverage estimation within Brandt's boreal region in Alaska
+  - 01_gen_canada_data.R - Prepare datasets for coverage estimation within Brandt's boreal region in Canada
+  - 02_gen_alaska_data.R - Prepare datasets for coverage estimation within Brandt's boreal region in Alaska
 
 ### Calculate intact area estimated by each dataset
 
-03_calc_canada_area.R - Calculate the area of each dataset within the Canadian boreal region
-04_calc_alaska_area.R - Calculate the area of each dataset within the Alaska boreal region
-05_gen_canada_maps.R - Create png maps of the distribution of each dataset within the Canadian boreal region
-06_gen_alaska_maps.R - Create png maps of the distribution of each dataset within the Canadian boreal region
+  - 03_calc_canada_area.R - Calculate the area of each dataset within the Canadian boreal region
+  - 04_calc_alaska_area.R - Calculate the area of each dataset within the Alaska boreal region
+  - 05_gen_canada_maps.R - Create png maps of the distribution of each dataset within the Canadian boreal region
+  - 06_gen_alaska_maps.R - Create png maps of the distribution of each dataset within the Canadian boreal region
 
 ### Estimate agreement among datasets
 
-07_prep_agree_data.R - Create 1-km intactness rasters for area of intersection among all datasets
-08_calc_agreement.R - Calculate Jaccard index among intactness rasters
+  - 07_prep_agree_data.R - Create 1-km intactness rasters for area of intersection among all datasets
+  - 08_calc_agreement.R - Calculate Jaccard index among intactness rasters
 
 ### Validation of intactness maps
 
-09_prep_valid_data.R
-10_clip_intact_maps.R
-11_sum_errors.R
-12_gen_map.R
+  - 09_prep_valid_data.R
+  - 10_clip_intact_maps.R
+  - 11_sum_bead_errors.R
