@@ -22,7 +22,7 @@ Vernier et al. <i>in prep</i>. Comparing global and regional maps of intactness 
 
 ## Code
 
-The following scripts can be used to replicate the analysis. Links to download the required datasets can be found in the [s1_datasets.md](https://github.com/beacons/intactness/blob/master/s1_datasets.md). Check the top of each script to determine which datasets are needed. If you have any questions, please contact [Pierre Vernier](pierre.vernier@gmail.com).
+The following scripts can be used to replicate the analysis. Links to download the required datasets can be found in the [s1_datasets.md](https://github.com/beacons/intactness/blob/master/s1_datasets.md). Check the top of each script to determine which datasets are needed. If you have any questions, please contact: pierre.vernier@gmail.com
 
 ### Prepare data
 
