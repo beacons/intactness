@@ -58,6 +58,15 @@ rc = mask(crop(r, extent(bnd)), bnd)
 rcc = cover(rc, bnd0)
 writeRaster(rcc, paste0(rasDir, 'hfp2013.tif'))
 
+# Rasterise HFP2019 (this is done differently because vector was based on 300m pixels)
+#v = st_read(paste0(vecDir, 'hfp2019.shp'))
+#r = fasterize(v, bnd, fun="sum")
+r = raster('data/boreal/raster1000/hfp2019.tif')
+crs(r) = '+proj=aea +lat_0=40 +lon_0=-96 +lat_1=50 +lat_2=70 +x_0=0 +y_0=0 +datum=NAD83 +units=m +no_defs'
+rc = mask(crop(r, extent(bnd)), bnd)
+rcc = cover(rc, bnd0)
+writeRaster(rcc, paste0(rasDir, 'hfp2019.tif'), overwrite=T)
+
 # Rasterize AB2015
 v = st_read(paste0(vecDir, 'ab2015.shp'))
 r = fasterize(v, bnd, fun="sum")

@@ -1,6 +1,6 @@
 # Prepare datasets for coverage estimation within Brandt's boreal region
 # Projection: Canada Albers Equal Area (epsg: 102001)
-# PV 2020-11-19
+# PV 2021-10-19
 
 # NOTE: This script won't work unless you change lines 20-23 to point to directories on your computer
 #       You will also need to download all the required datasets (see s1_datasets.md for links)
@@ -19,9 +19,8 @@ library(rmapshaper)
 cellsize = 1000
 prj = "+proj=aea +lat_1=50 +lat_2=70 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs"
 dropDir = 'C:/Users/PIVER37/Dropbox (BEACONs)/gisdata/intactness/'
-vecDir = 'C:/Users/PIVER37/Documents/gisdata/intactness/boreal/'
-tmpDir = 'C:/Users/PIVER37/Documents/gisdata/intactness/tmp/'
-rasDir = paste0('C:/Users/PIVER37/Documents/gisdata/intactness/boreal/raster',cellsize,'/')
+vecDir = 'C:/Users/PIVER37/Documents/github/intactness/data/boreal/'
+rasDir = paste0('C:/Users/PIVER37/Documents/github/intactness/data/boreal/raster',cellsize,'/')
 if (!dir.exists(vecDir)) dir.create(vecDir, recursive=T)
 if (!dir.exists(rasDir)) dir.create(rasDir, recursive=T)
 
@@ -182,3 +181,47 @@ for (i in c(2000, 2005, 2010, 2013)) {
         st_write(v, paste0(vecDir,"hfp",i,".shp"), delete_layer=T)
     }
 }
+
+
+################################################################################
+# ADDED 2021-10-17
+################################################################################
+
+can300dir = 'C:/Users/PIVER37/Documents/gisdata/canada/raster300/'
+bnd = st_read(paste0(vecDir, 'boreal.shp')) %>% mutate(one=1)
+rbnd300 = fasterize(bnd, raster(bnd, res=300), field='one')
+writeRaster(rbnd300, paste0(vecDir, 'raster300/boreal300.tif'), overwrite=T)
+rbnd1000 = raster(paste0(vecDir, 'raster1000/boreal.tif'))
+
+# Human footprint for Canada
+r = raster(paste0(can300dir, 'hfp.tif'))
+rc = crop(r, rbnd300)
+rcr = resample(rc, rbnd300)
+rcrm = mask(rcr, rbnd300)
+writeRaster(rcrm, paste0(vecDir,'raster300/hfp.tif'), overwrite=TRUE)
+# A 0.11 threshold seems best; 0.1 or less results in squared off sections
+rcrmr0 = reclassify(rcrm, c(-Inf,0.11,1, 0.11,+Inf,NA)) # keep 0 values
+writeRaster(rcrmr0, paste0(vecDir,'raster300/hfp2019.tif'), overwrite=TRUE)
+r1000 = resample(rcrmr0, rbnd1000, method='bilinear')
+writeRaster(r1000, paste0(vecDir,'raster1000/hfp2019.tif'), overwrite=TRUE)
+# Vectorize...
+r = rast(rcrmr0)
+v <- as.polygons(r)
+writeVector(v, 'data/boreal/hfp2019.shp', overwrite=TRUE)
+#v <- rasterToPolygons(x, fun=NULL, n=4, na.rm=TRUE, digits=12, dissolve=FALSE)
+#v <- st_as_stars(rcrmr0) %>% 
+#    st_as_sf(merge = TRUE) %>% # this is the raster to polygons part
+#    st_cast("MULTIPOLYGON") %>% # cast the polygons to polylines
+#    ms_dissolve()
+#st_write(v, paste0(vecDir,"hfp2019.shp"), delete_layer=T)
+
+# Forest landscape integrity
+r = raster(paste0(can300dir, 'flii.tif'))
+rc = crop(r, rbnd300)
+rc[rc==-9999] = NA
+rc = rc/1000
+rcr = resample(rc, rbnd300)
+rcrm = mask(rcr, rbnd300)
+writeRaster(rcrm, paste0(vecDir,'raster300/flii.tif'), overwrite=TRUE)
+rcrmr = reclassify(rcrm, c(-Inf,10,0, 10,+Inf,NA)) # keep 0 values
+writeRaster(rcrmr, paste0(vecDir,'raster300/flii1.tif'), overwrite=TRUE)

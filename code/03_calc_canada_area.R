@@ -1,10 +1,11 @@
 # Calculate the area of each dataset within the Canadian boreal region
-# PV 2020-11-19
+# PV 2021-10-17
 
 library(sf)
 library(tidyverse)
 
-maps=c('ha2010','cifl2000','cifl2013','gifl2000','gifl2013','gifl2016','hfp2000','hfp2005','hfp2010','hfp2013','ab2000','ab2005','ab2010','ab2015','ghm2016','vlia2015','ff1996')
+maps=c('ha2010','cifl2000','cifl2013','gifl2000','gifl2013','gifl2016','hfp2000','hfp2005','hfp2010','hfp2013','hfp2019','ab2000','ab2005','ab2010','ab2015','ghm2016','vlia2015','ff1996')
+
 dataDir <- 'data/boreal/'
 boreal <- st_read(paste0(dataDir,"boreal.shp"))
 boreal_km2 = st_area(boreal)/1000000
@@ -16,7 +17,7 @@ vc = st_read(paste0(dataDir,'cifl.shp')) # VERIFY THIS IS THE APPROPRIATE DATASE
 x$cover_km2[x$dataset %in% c('cifl2000','cifl2013')] = st_area(vc)/1000000
 vc = st_read(paste0(dataDir,'gifl.shp'))
 x$cover_km2[x$dataset %in% c('gifl2000','gifl2013','gifl2016')] = st_area(vc)/1000000
-x$cover_km2[x$dataset %in% c('ha2010','hfp2000','hfp2005','hfp2010','hfp2013','ab2000','ab2005','ab2010','ab2015','ghm2016','vlia2015','ff1996')] = boreal_km2
+x$cover_km2[x$dataset %in% c('ha2010','hfp2000','hfp2005','hfp2010','hfp2013','hfp2019','ab2000','ab2005','ab2010','ab2015','ghm2016','vlia2015','ff1996')] = boreal_km2
 
 # Calculate area intact in each dataset
 for (i in maps) {

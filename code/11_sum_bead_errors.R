@@ -1,5 +1,5 @@
 # Sum output of intersections for 39 herds that are completely within GIFL and CIFL boundaries
-# PV 2020-11-24
+# PV 2021-11-09
 
 # NOTE: This script won't work unless you download the BEAD dataset (see s1_datasets.md for links)
 
@@ -7,9 +7,19 @@ library(sf)
 library(tidyverse)
 source("code/convert_tibbles.R")
 
-imaps = c('ha2010','cifl2013','gifl2016','hfp2013','ghm2016','ab2015','vlia2015')
+imaps = c('ha2010','cifl2013','gifl2016','hfp2013','hfp2019','ghm2016','ab2015','vlia2015')
 iDir = "data/bead/"
 ranges = sort(st_read('data/bead/_ranges.gpkg')$Herd_OS) #list.files(iDir, pattern='.gpkg$')
+
+# dissolve to calc %intact for CHFP2019 (2021-11-09)
+cr = st_read('data/bead/_ranges.gpkg') %>%
+    mutate(one=1) %>%
+    group_by(one) %>% 
+    summarize() 
+r = st_read('data/boreal/hfp2019.shp')
+rcr = rmapshaper::ms_clip(r, cr)
+pct = round(st_area(rcr)/st_area(cr)*100,2) # %intact = 100 - pct
+
 dtypes = c('poly30','line30','poly15','line15')
 
 for (d in dtypes) {

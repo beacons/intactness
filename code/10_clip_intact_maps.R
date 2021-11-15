@@ -1,13 +1,14 @@
 # Clip disturbance datasets to intactness maps for 39 herds that are within cifl x gifl boundary
-# PV 2020-11-24
+# PV 2021-10-19
 
 library(sf)
 library(tidyverse)
 library(rmapshaper)
 
 dist = c('poly30','line30','poly15','line15')
-maps = c('ha2010','cifl2013','gifl2016','hfp2013','ghm2016','ab2015','vlia2015')
+maps = c('ha2010','cifl2013','gifl2016','hfp2013','hfp2019','ghm2016','ab2015','vlia2015')
 iDir = "data/bead/"
+iDir2 = "data/bead_shp/"
 bead = st_read('data/bead/_ranges.gpkg', quiet=TRUE)
 ranges = sort(bead$Herd_OS)
 for (cr in ranges) {
@@ -27,20 +28,27 @@ for (cr in ranges) {
         if (i %in% lyrs) { # check if layer exists
             cat(i,':\n'); flush.console()
             intact_map = st_read(paste0(iDir,cr,'.gpkg'), layer=i, quiet=TRUE)
-            for (j in dist) {
-                cat('    ...',j,'\n'); flush.console()
-                poly30_clip = ms_clip(poly30, intact_map)
-                poly30_clip_area = mutate(poly30_clip, Area=round(st_area(poly30_clip),1))
-                st_write(poly30_clip_area, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_poly30'), append = TRUE, delete_layer=TRUE)
-                line30_clip = ms_clip(line30, intact_map)
-                line30_clip_length = mutate(line30_clip, Length=round(st_length(line30_clip),1))
-                st_write(line30_clip_length, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_line30'), append = TRUE, delete_layer=TRUE)
-                poly15_clip = ms_clip(poly15, intact_map)
-                poly15_clip_area = mutate(poly15_clip, Area=round(st_area(poly15_clip),1))
-                st_write(poly15_clip_area, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_poly15'), append = TRUE, delete_layer=TRUE)
-                line15_clip = ms_clip(line15, intact_map)
-                line15_clip_length = mutate(line15_clip, Length=round(st_length(line15_clip),1))
-                st_write(line15_clip_length, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_line15'), append = TRUE, delete_layer=TRUE)
+            #intact_map = st_read(paste0(iDir2,cr,'_',i,'.shp'), quiet=TRUE)
+            if (nrow(intact_map) > 0) { # Added 2021-10-18 because of HFP2019 having empty intact_map
+                for (j in dist) {
+                    cat('    ...',j,'\n'); flush.console()
+                    poly30_clip = ms_clip(poly30, intact_map)
+                    poly30_clip_area = mutate(poly30_clip, Area=round(st_area(poly30_clip),1))
+                    st_write(poly30_clip_area, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_poly30'), append = TRUE, delete_layer=TRUE)
+                    #st_write(poly30_clip_area, paste0(iDir2,cr,'_',i,'_poly30.shp'))
+                    line30_clip = ms_clip(line30, intact_map)
+                    line30_clip_length = mutate(line30_clip, Length=round(st_length(line30_clip),1))
+                    st_write(line30_clip_length, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_line30'), append = TRUE, delete_layer=TRUE)
+                    #st_write(line30_clip_length, paste0(iDir2,cr,'_',i,'_line30.shp'))
+                    poly15_clip = ms_clip(poly15, intact_map)
+                    poly15_clip_area = mutate(poly15_clip, Area=round(st_area(poly15_clip),1))
+                    st_write(poly15_clip_area, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_poly15'), append = TRUE, delete_layer=TRUE)
+                    #st_write(poly15_clip_area, paste0(iDir2,cr,'_',i,'_poly15.shp'))
+                    line15_clip = ms_clip(line15, intact_map)
+                    line15_clip_length = mutate(line15_clip, Length=round(st_length(line15_clip),1))
+                    st_write(line15_clip_length, paste0(iDir,cr,'.gpkg'), layer=paste0(i,'_line15'), append = TRUE, delete_layer=TRUE)
+                    #st_write(line15_clip_length, paste0(iDir2,cr,'_',i,'_line15.shp'))
+                }
             }
         }
     }
