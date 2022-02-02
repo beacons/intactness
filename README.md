@@ -16,7 +16,7 @@ Vernier et al. <i>in prep</i>. Comparing global and regional maps of intactness 
 ## Supplementary material
 
 * [Description of intactness and human influence datasets within the boreal region of Canada and Alaska.](https://github.com/beacons/intactness/blob/master/supp/s1_datasets.md)
-* [Interactive maps for the two case studies](https://rpubs.com/vernier/intactness_case_studies)
+* [Interactive maps for the two case studies.](https://rpubs.com/vernier/intactness_case_studies)
 
 
 ## Code
