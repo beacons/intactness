@@ -104,7 +104,7 @@ Global Forest Watch Canada's Human Access dataset is current to circa 2010. Huma
 
   - Data years: 2010
   - References: Lee and Cheng 2014
-  - Website: https://globalforestwatch.ca/sites/gfwc/files/data/20140109B_Canada_Access_2010_metadata.html
+  - Website: https://databasin.org/datasets/0c54d369b225471ea7e9f7999ce94cc0/
 
  <a href="maps/ca_ha2010.png"><img width=400 src="maps/ca_ha2010.png"></a> 
 
