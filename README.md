@@ -1,6 +1,6 @@
 # Intactness Project
 
-Revised: 2022-02-02
+Revised: 2022-11-17
 
 
 Comparison of intactness datasets for conservation planning in the boreal region of North America.
@@ -8,9 +8,7 @@ Comparison of intactness datasets for conservation planning in the boreal region
 
 ## Manuscript
 
-Vernier et al. <i>in prep</i>. Comparing global and regional maps of intactness in the boreal region of North America: implications for conservation planning in one of the world's remaining wilderness areas
-
-* View/download an earlier version of the manuscript published as a [preprint on bioRxiv](https://www.biorxiv.org/content/10.1101/2020.11.13.382101v2)
+Vernier, P.R., Leroux, S.J., Cumming, S.G., Lisgo K., Suarez Esteban A., Krawchuck, M.A., Schmiegelow, F. 2022. Comparing global and regional maps of intactness in the boreal region of North America: implications for conservation planning in one of the world's remaining wilderness areas. URL: https://www.frontiersin.org/articles/10.3389/ffgc.2022.843053/full
 
 
 ## Supplementary material
